@@ -10,7 +10,7 @@ document.getElementById("add-btn").addEventListener("click", function () {
   let description = document.getElementById("description").value;
   //console.log(description, "des");
 
-  if (title === "") {
+  if (title.trim() === "") {
     alert("pleas enter the title of the note");
   } else {
     notes.push({ title: title, description: description });
