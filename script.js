@@ -16,7 +16,6 @@ document.getElementById("add-btn").addEventListener("click", function () {
     document.getElementById("title").value = "";
     document.getElementById("description").value = "";
 
-    console.log(notes, "notes");
     showNotes();
   }
 });
