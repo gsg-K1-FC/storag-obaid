@@ -8,7 +8,6 @@ let upd = 0,
 document.getElementById("add-btn").addEventListener("click", function () {
   let title = document.getElementById("title").value;
   let description = document.getElementById("description").value;
-  //console.log(description, "des");
 
   if (title.trim() === "") {
     alert("pleas enter the title of the note");
@@ -86,7 +85,7 @@ function showNotes() {
         inpDescription.setAttribute("id", "inp2");
         inpDescription.value = note.description;
         let listIt = document.getElementById("li" + i);
-        //console.log(i);
+
         let br1 = document.createElement("br");
         let br2 = document.createElement("br");
         listIt.prepend(br1);
